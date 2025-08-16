@@ -1,3 +1,4 @@
+import About from './About'
 import Hero from './Hero/Hero'
 import Navbar from './Navbar/Navbar'
 import Services from './Services'
@@ -8,6 +9,7 @@ export default function Home() {
         <Navbar/>
         <Hero/>
         <Services/>
+        <About/>
     </div>
   )
 }
