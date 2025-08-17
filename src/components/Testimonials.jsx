@@ -2,10 +2,11 @@ import React from "react";
 import pic from "../assets/woman-8852668_1920.jpg";
 import { FaQuoteLeft,  FaStar } from "react-icons/fa6";
 import { HiArrowLeftCircle, HiArrowRightCircle } from "react-icons/hi2";
+import Blogs from "./Blogs";
 function Testimonials() {
   return (
-    <section className="h-screen bg-slate-300/50">
-      <section className="max-w-[70%] m-auto py-20 relative">
+    <section className=" min-h-screen bg-slate-300/50">
+      <section className="max-w-[70%] m-auto py-20 flex flex-col gap-40 relative">
         <h2 className=" text-8xl  -left-10 font-bold text-black/5 absolute -z-10">
           Testimonials
         </h2>
@@ -60,6 +61,7 @@ function Testimonials() {
             </article>
           </section>
         </article>
+          <Blogs/>
       </section>
     </section>
   );
