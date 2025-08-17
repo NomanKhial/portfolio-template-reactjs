@@ -11,14 +11,14 @@ function About() {
       <section className="flex gap-24 items-start py-32 justify-center">
         {/* left side */}
         <div className="relative">
-          <div className="bg-primary text-white relative w-[400px] h-[380px] rounded-lg">
-            <h2 className=" absolute -rotate-90 -left-36 tracking-widest top-1/2 text-[48px] font-bold -translate-y-1/2">
+          <div className="bg-primary text-white relative w-[380px] h-[380px] rounded-lg">
+            <h2 className=" absolute -rotate-90 -left-[170px] tracking-wide top-1/2 text-[60px] font-bold -translate-y-1/2">
               Noman Khial
             </h2>
-            <h2 className="absolute  -right-16 top-1/2 leading-none -translate-y-1/2 text-[350px] font-bold">
+            <h2 className="absolute tracking-[-50px] right-0 top-1/2 leading-none -translate-y-1/2 text-[350px] font-bold">
               12
             </h2>
-            <p className=" text-xl absolute bottom-4 right-20 ">
+            <p className=" text-xl absolute bottom-4 right-10 ">
               Year Of Experinces
             </p>
           </div>
