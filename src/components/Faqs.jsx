@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BiPlusCircle, BiMinusCircle } from "react-icons/bi";
+import Strip from "./Strip";
 
 function Faqs() {
   const aboutMeAccordion = [
@@ -42,7 +43,8 @@ function Faqs() {
   };
 
   return (
-    <section className="bg-primary min-h-screen flex items-center justify-center">
+    <>
+        <section className="bg-primary min-h-screen relative flex items-center justify-center">
       <section className="max-w-[60%] mx-auto flex flex-col items-center py-20 text-white">
         <article className="flex flex-col gap-6 w-full">
           <header className="text-center flex flex-col gap-6 mb-10">
@@ -80,6 +82,10 @@ function Faqs() {
         </article>
       </section>
     </section>
+   <div className="absolute w-full mt-10">
+     <Strip/>
+   </div>
+    </>
   );
 }
 
