@@ -17,3 +17,18 @@
 .remove-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+.connect input, .connect textarea {
+  border: none;
+  outline: none;
+  padding: 18px;
+  flex: 1;
+  border-radius: 8px;
+  background-color: #5840ba;
+  color: white;
+  font-weight: 900;
+}
+.connect textarea{
+  resize: none;
+  min-height: 200px;
+}
