@@ -15,7 +15,7 @@ function About() {
             <h2 className=" absolute -rotate-90 -left-36 tracking-widest top-1/2 text-[48px] font-bold -translate-y-1/2">
               Noman Khial
             </h2>
-            <h2 className="absolute -right-16 top-1/2 leading-none -translate-y-1/2 text-[350px] font-bold">
+            <h2 className="absolute  -right-16 top-1/2 leading-none -translate-y-1/2 text-[350px] font-bold">
               12
             </h2>
             <p className=" text-xl absolute bottom-4 right-20 ">
