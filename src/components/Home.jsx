@@ -1,5 +1,6 @@
 import About from './About'
 import Contact from './Contact'
+import Faqs from './Faqs'
 import Hero from './Hero/Hero'
 import Navbar from './Navbar/Navbar'
 import Pricing from './Pricing'
@@ -18,6 +19,7 @@ export default function Home() {
         <Pricing/>
         <Contact/>
         <Testimonials/>
+        <Faqs/>
     </div>
   )
 }
