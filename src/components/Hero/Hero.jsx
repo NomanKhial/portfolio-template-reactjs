@@ -7,12 +7,12 @@ export default function Hero() {
     <div className='relative min-h-[100vh] py-10'>
         <div className='text-center'>
           <p className='text-xl'>- Hello</p>
-          <h2 className='text-7xl font-bold'>I'm <span className='text-primary underline'>Noman Khial,</span> <br/> ReactJs Developer</h2>
+          <h2 className='text-6xl font-bold mb-8 leading-[60px]'>I'm <span className='text-primary underline'>Noman Khial,</span> <br/> ReactJs Developer</h2>
 
-          <div className='overflow-hidden  max-w-[700px] mx-auto absolute bottom-30 left-1/2 translate-x-[-50%]'>
+          <div className='overflow-hidden  max-w-[600px] mx-auto absolute bottom-30 left-1/2 translate-x-[-50%]'>
             <img src={brandImage } className='rounded-lg w-full' alt='brand image' fetchPriority='high'/>
           </div>
-          <div className='flex items-center p-2 gap-2  max-w-[500px] mx-auto bg-white rounded-full border absolute bottom-40 left-1/2 translate-x-[-50%]'>
+          <div className='flex items-center p-2 gap-2  max-w-[500px] mx-auto bg-white rounded-full border absolute bottom-64 left-1/2 translate-x-[-50%]'>
             <Button label='Portfolio'/>
             <Button label='Hire Me'/>
           </div>
