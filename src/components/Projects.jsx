@@ -4,21 +4,22 @@ import projectImage from "../../src/assets/woman-8852668_1920.jpg";
 
 function Projects() {
   return (
-    <section id="projects" className="w-full bg-primary min-h-screen m-auto  -z-10 relative">
+   <section id="projects"  className="w-full  bg-primary/90 min-h-screen"  >
+     <section className=" w-[90%] m-auto relative">
       {/* big background title */}
-      <h2 className="text-[160px]  font-bold tracking-tight text-white/10 m-32 absolute">
+      <h2 className=" text-4xl md:text-[160px] -z-10 font-bold tracking-tight text-black  mt-20 absolute">
         Latest Projects
       </h2>
 
       {/* content wrapper */}
-      <section className="max-w-[80%] py-40 m-auto mt-32 relative z-10">
+      <section className="max-w-[90%] py-20 m-auto relative">
         {/* top heading row */}
-        <div className="flex items-center justify-between text-white">
+        <div className="flex items-center flex-wrap justify-between text-white">
           <div>
             <span className=" text-2xl font-bold inline-block mb-2">
               - Projects
             </span>
-            <h2 className=" text-7xl font-bold ">
+            <h2 className="text-4xl md:text-6xl font-bold ">
               My <span className=" text-secondary">Latest Projects</span>
             </h2>
           </div>
@@ -38,9 +39,9 @@ function Projects() {
         </div>
 
         {/* project cards */}
-        <section className="w-[86%] mx-auto p-3 rounded-3xl mt-20 bg-primary border min-h-[460px]">
-          <div className="flex gap-10 items-center h-full">
-            <div className="basis-1/3 min-w-[320px] overflow-hidden">
+        <section className="md:w-[86%] mx-auto p-3 rounded-3xl mt-20 bg-primary border min-h-[460px]">
+          <div className="flex gap-10 items-center flex-wrap h-full">
+            <div className="md:basis-1/3 md:min-w-[320px] overflow-hidden">
               <img
                 className="object-cover w-full h-full rounded-xl"
                 src={projectImage}
@@ -62,7 +63,7 @@ function Projects() {
               </div>
 
               <div className="flex flex-col gap-6 mt-5">
-                <h2 className=" max-w-[400px] text-4xl font-bold">
+                <h2 className=" text-2xl md:text-4xl font-bold">
                   Doctor Appointment - Web App
                 </h2>
 
@@ -88,9 +89,9 @@ function Projects() {
         </section>
 
         {/* duplicate card for demo */}
-        <section className="w-[86%] mx-auto p-3 rounded-3xl mt-20 bg-primary border min-h-[460px]">
-          <div className="flex gap-10 items-center h-full">
-            <div className="basis-1/3 min-w-[320px] overflow-hidden">
+   <section className="md:w-[86%] mx-auto p-3 rounded-3xl mt-20 bg-primary border min-h-[460px]">
+          <div className="flex gap-10 items-center flex-wrap h-full">
+            <div className="md:basis-1/3 md:min-w-[320px] overflow-hidden">
               <img
                 className="object-cover w-full h-full rounded-xl"
                 src={projectImage}
@@ -112,7 +113,7 @@ function Projects() {
               </div>
 
               <div className="flex flex-col gap-6 mt-5">
-                <h2 className=" max-w-[400px] text-4xl font-bold">
+                <h2 className=" text-2xl md:text-4xl font-bold">
                   Doctor Appointment - Web App
                 </h2>
 
@@ -138,6 +139,7 @@ function Projects() {
         </section>
       </section>
     </section>
+   </section>
   );
 }
 
