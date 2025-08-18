@@ -6,28 +6,28 @@ import { SiGooglescholar } from "react-icons/si";
 
 function About() {
   return (
-    <section id="about" className="max-w-[80%] py-10 m-auto flex flex-col gap-4 ">
+    <section id="about" className="max-w-[90%] pt-20 m-auto flex flex-col  gap-4 ">
       {/* top section start */}
-      <section className="flex gap-24 items-start py-32 justify-center">
+      <section className="flex gap-24 items-start justify-center flex-wrap">
         {/* left side */}
         <div className="relative">
-          <div className="bg-primary text-white relative w-[380px] h-[380px] rounded-lg">
-            <h2 className=" absolute -rotate-90 -left-[170px] tracking-wide top-1/2 text-[60px] font-bold -translate-y-1/2">
+          <div className="bg-primary text-white relative w-[280px] h-[280px] md:w-[380px] md:h-[360px] rounded-lg">
+            <h2 className=" absolute -rotate-90 -left-[118px] md:-left-[170px] tracking-[7px] top-1/2 text-[32px] md:text-[60px] font-bold -translate-y-1/2">
               Noman Khial
             </h2>
-            <h2 className="absolute tracking-[-50px] right-0 top-1/2 leading-none -translate-y-1/2 text-[350px] font-bold">
+            <h2 className="absolute md:tracking-[-50px] right-6 md:right-0 top-1/2 leading-none -translate-y-1/2 text-[200px] md:text-[350px] font-bold">
               12
             </h2>
-            <p className=" text-xl absolute bottom-4 right-10 ">
+            <p className=" text-xl absolute bottom-4  right-6 md:right-10 ">
               Year Of Experinces
             </p>
           </div>
         </div>
         {/* right side */}
-        <div className="flex flex-col gap-1 max-w-[40%] ">
+        <div className="flex flex-col gap-1 md:max-w-[40%] ">
           <div>
             <span className="text-xl font-bold mb-6">- About Me</span>
-            <h2 className="text-6xl text-slate-600 font-bold">
+            <h2 className="text-4xl md:text-6xl text-slate-600 font-bold">
               Who is{" "}
               <span className=" text-primary">
                 Noman <br />
@@ -75,15 +75,15 @@ function About() {
       </section>
       {/* top section end */}
 
-      {/* bottom section start */}
-      <section className="w-[90%] m-auto">
-      <section className="text-center mb-2">
+           {/* bottom section start */}
+      <section className="">
+      <section className="md:text-center mb-2">
         <p className="text-xl font-bold mb-1">- Education & Work</p>
-        <h2 className="text-6xl font-bold">My <span className="text-primary">Education</span> & <span className="text-primary"> Work Experience</span></h2>
+        <h2 className=" text-4xl md:text-6xl font-bold">My <span className="text-primary">Education</span> & <span className="text-primary"> Work Experience</span></h2>
       </section>
 
-      <section className="flex gap-8 m-auto mt-10">
-          <div className=" rounded-md shadow-ld p-6  bg-slate-100 basis-1/2">
+      <section className="flex flex-wrap justify-center gap-8  mt-10">
+          <div className=" rounded-md shadow-ld p-6  bg-slate-100  basis-1/3 min-w-[280px]">
             <div className="flex items-center border-b gap-4  pb-3 border-slate-300  text-[#5840ba]">
               <SiGooglescholar size={40}  />
               <p className="text-xl font-bold">Education</p>
@@ -110,7 +110,7 @@ function About() {
               <span className="font-bold">2021 - 2023</span>
             </div>
           </div>
-           <div className=" rounded-md shadow-ld p-6  bg-slate-100 basis-1/2">
+           <div className=" rounded-md shadow-ld p-6  bg-slate-100 basis-1/3 min-w-[280px] ">
             <div className="flex items-center border-b   pb-3 border-slate-300 gap-4  text-[#5840ba]">
               <ImBriefcase size={40} />
               <p className="text-xl font-bold">Work Experience</p>
@@ -137,6 +137,7 @@ function About() {
               <span className="font-bold">2024 - 2025</span>
             </div>
           </div>
+          
       </section>
       {/* bottom section end */}
     </section>
