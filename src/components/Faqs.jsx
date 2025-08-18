@@ -44,12 +44,12 @@ function Faqs() {
 
   return (
     <>
-        <section className="bg-primary min-h-screen relative flex items-center justify-center">
-      <section className="max-w-[60%] mx-auto flex flex-col items-center py-20 text-white">
-        <article className="flex flex-col gap-6 w-full">
-          <header className="text-center flex flex-col gap-6 mb-10">
+      <section className="bg-primary h-[80vh] md:h-[100vh] relative flex items-center justify-center">
+      <section className="w-[90%] md:max-w-[60%] mx-auto flex flex-col items-center text-white">
+        <article className="flex flex-col md:gap-6 gap-3 w-full">
+          <header className="text-center flex flex-col md:gap-6 gap-1 mb-10">
             <span className="text-xl font-bold">- FAQs</span>
-            <h2 className="text-6xl font-bold">
+            <h2 className=" text-4xl md:text-6xl font-bold">
               Questions? <span className="text-secondary"> Look Here.</span>
             </h2>
           </header>
