@@ -61,7 +61,7 @@ function Contact() {
               </ul>
             </address>
           </div>
-          <form className=" basis-1/2 flex flex-col gap-6">
+          <form className=" md:basis-1/2 flex flex-col gap-6">
             <div className="flex flex-wrap gap-8">
               <input
                 type="text"

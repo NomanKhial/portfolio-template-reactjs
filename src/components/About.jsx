@@ -6,7 +6,7 @@ import { SiGooglescholar } from "react-icons/si";
 
 function About() {
   return (
-    <section id="about" className="max-w-[90%] pt-20 m-auto flex flex-col  gap-4 ">
+    <section id="about" className="max-w-[90%] py-20 m-auto flex flex-col  gap-4 ">
       {/* top section start */}
       <section className="flex gap-24 items-start justify-center flex-wrap">
         {/* left side */}
@@ -76,14 +76,14 @@ function About() {
       {/* top section end */}
 
            {/* bottom section start */}
-      <section className="">
+      <section>
       <section className="md:text-center mb-2">
         <p className="text-xl font-bold mb-1">- Education & Work</p>
         <h2 className=" text-4xl md:text-6xl font-bold">My <span className="text-primary">Education</span> & <span className="text-primary"> Work Experience</span></h2>
       </section>
 
-      <section className="flex flex-wrap justify-center gap-8  mt-10">
-          <div className=" rounded-md shadow-ld p-6  bg-slate-100  basis-1/3 min-w-[280px]">
+      <section className="flex flex-wrap  md:justify-center gap-8  mt-10">
+          <div className=" rounded-md shadow-ld p-6  bg-slate-100  w-full md:basis-1/3 min-w-[280px]">
             <div className="flex items-center border-b gap-4  pb-3 border-slate-300  text-[#5840ba]">
               <SiGooglescholar size={40}  />
               <p className="text-xl font-bold">Education</p>
@@ -110,7 +110,7 @@ function About() {
               <span className="font-bold">2021 - 2023</span>
             </div>
           </div>
-           <div className=" rounded-md shadow-ld p-6  bg-slate-100 basis-1/3 min-w-[280px] ">
+           <div className=" rounded-md shadow-ld p-6  bg-slate-100 w-full md:basis-1/3 min-w-[280px] ">
             <div className="flex items-center border-b   pb-3 border-slate-300 gap-4  text-[#5840ba]">
               <ImBriefcase size={40} />
               <p className="text-xl font-bold">Work Experience</p>

@@ -18,6 +18,10 @@ img{
   width: 100%;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .remove-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

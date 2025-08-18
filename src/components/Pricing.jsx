@@ -9,14 +9,14 @@ function Pricing() {
   return (
     <section className="relative bg-slate-100 py-20">
       {/* main content */}
-      <section className="m-auto max-w-[80%] relative">
+      <section className="m-auto max-w-[90%] relative">
         <h2 className="absolute font-bold tracking-wide -z-10 text-gray-600/10 text-[120px]">
           Model
         </h2>
 
-        <section className="flex gap-10 flex-wrap justify-center items-center">
+        <section className="flex gap-10 flex-wrap md:justify-center items-center">
           {/* card 1 */}
-          <div className="flex flex-col justify-between  basis-1/4 min-w-[290px] h-[600px]">
+          <div className="flex flex-col justify-between w-full md:basis-1/4 min-w-[290px] h-[600px]">
             <div className="flex flex-col gap-1">
               <span className="font-bold text-xl">- Pricing Table</span>
               <h2 className="font-bold text-4xl text-slate-600">
@@ -50,7 +50,7 @@ function Pricing() {
           </div>
 
           {/* card 2 */}
-          <div className="text-white self-end basis-1/4  min-w-[290px] p-6 flex flex-col justify-around h-[500px] bg-primary rounded-xl">
+          <div className="text-white self-end md:basis-1/4 w-full  min-w-[290px] p-6 flex flex-col justify-around h-[500px] bg-primary rounded-xl">
             <div className="flex justify-between">
               <div className="flex flex-col gap-1">
                 <span className="font-bold text-xl">Hourly</span>
@@ -87,7 +87,7 @@ function Pricing() {
           </div>
 
           {/* card 3 */}
-          <div className="text-black self-end  basis-1/4 min-w-[290px] p-6 flex flex-col justify-around h-[600px] bg-white rounded-xl">
+          <div className="text-black self-end w-full  md:basis-1/4 min-w-[290px] p-6 flex flex-col justify-around h-[600px] bg-white rounded-xl">
             <div className="flex justify-between">
               <div className="flex flex-col gap-1">
                 <span className="font-bold text-xl">Monthly</span>

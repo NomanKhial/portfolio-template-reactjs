@@ -17,7 +17,7 @@ function Footer() {
     <footer>
       <section className="w-[90%] mx-auto h-full  py-20 flex flex-col gap-10 ">
         {/* top section */}
-        <section className="flex justify-between items-center pb-6 border-b border-black/10 ">
+        <section className="flex justify-between  flex-wrap  gap-2 items-center pb-6 border-b border-black/10 ">
           <h2 className=" text-4xl  font-bold">
             Let's <span className=" text-primary">Connect</span> there
           </h2>
@@ -34,8 +34,8 @@ function Footer() {
         </section>
 
         {/* main footer */}
-        <section className=" flex  flex-wrap justify-between  border-b border-black/10 py-10 text-slate-600">
-          <article className="flex flex-col gap-10 basis-1/3">
+        <section className=" flex  flex-wrap gap-6 justify-between  border-b border-black/10 py-10 text-slate-600">
+          <article className="flex flex-col gap-5 md:gap-10 basis-1/3">
             <header className="flex gap-2 items-center w-60">
               <img
                 src={logo}
@@ -45,9 +45,8 @@ function Footer() {
               />
               <h2 className="text-xl  font-bold">Noman Khial</h2>
             </header>
-            <p className="  leading-6">
-              Noman Khial. React and React Native Developer. React and React
-              Native Developer. React and React Native Developer. React and React Native Developer. React and React Native Developer.   
+            <p className="">
+             Hi, this is Noman, with expertise in modern web-development, app-development, and designing. 
             </p>
             <div className="flex gap-3">
               {socialIcons.map((Icon, index) => (
@@ -82,7 +81,7 @@ function Footer() {
               <li>MERN STACK DEVELOPER</li>
             </ul>
           </div>
-          <div className="flex flex-col gap-6 ">
+          <div className="flex flex-col gap-6 w-full md:w-1/3 ">
                 <h2 className="text-primary font-bold text-2xl">Get the latest information</h2>
                 <form className="flex itams-center h-12  rounded-xl overflow-hidden">
                     <input required className=" h-full flex-1  p-2  pl-6 outline-none bg-slate-100" type="text" inputMode="email"  placeholder="Enter address"/>
@@ -94,7 +93,7 @@ function Footer() {
         </section>
 
         {/* bottom section */}
-        <section  className=" text-gray-800 flex justify-between items-center flex-wrap">
+        <section  className=" text-gray-800 flex gap-4 text-center md:text-start justify-between items-center flex-wrap">
             <p>Copyright © {new Date().getFullYear()} NomanKhial. All Rights Reserved. </p>
             <ul className="flex gap-2">
                 <li><Link>User Terms & Conditions</Link></li>

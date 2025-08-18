@@ -7,7 +7,7 @@ function Projects() {
    <section id="projects"  className="w-full  bg-primary/90 min-h-screen"  >
      <section className=" w-[90%] m-auto relative">
       {/* big background title */}
-      <h2 className=" text-4xl md:text-[160px] -z-10 font-bold tracking-tight text-black  mt-20 absolute">
+      <h2 className="text-4xl md:text-8xl -z-10 font-bold tracking-tight text-black  mt-20 absolute">
         Latest Projects
       </h2>
 

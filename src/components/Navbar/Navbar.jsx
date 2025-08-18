@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import menuLink from "./data.js"
-import { NavLink, useLocation } from 'react-router'
+import { Link, NavLink, useLocation } from 'react-router'
+import { FaGithub } from "react-icons/fa";
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('home')
  
@@ -27,7 +28,18 @@ export default function Navbar() {
                 menuLink.map((menu, id)=> <NavLink to={`#${menu.toLowerCase()}`} className={`${menu === activeLink ? 'border-b text-primary' : ''}`} onClick={()=> setActiveLink(menu)} key={id}>{menu}</NavLink>)
                }
             </ul>
-            <NavLink to='#contact'  className='bg-primary hover:text-white px-4 py-1 md:px-8 md:py-3 rounded-full text-white  font-bold '>Contact Me</NavLink>
+            
+              <ul className="inline-flex items-center gap-4">
+              <li>
+                <NavLink to='#contact'  className='bg-primary hover:text-white px-4 py-1 md:px-8 md:py-3 rounded-full text-white  font-bold '>Contact Me</NavLink>
+              </li>
+              <li>
+                <Link to='https://github.com/NomanKhial'> <FaGithub size={30} color="black"/> </Link>
+              </li>
+
+                
+  
+              </ul>
         </nav>
     </header>
   )

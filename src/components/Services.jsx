@@ -6,7 +6,7 @@ export default function Services() {
   return (
    <section id='services'  className='min-h-screen pt-20 bg-primary/90 py-2 '>
      <div className='relative'>
-        <h2 className="absolute top-0 left-0 -z-10 text-7xl md:text-[250px] tracking-wide font-extrabold text-black">Services</h2>
+        <h2 className="absolute top-0 left-0 -z-10 text-4xl md:text-9xl tracking-wide font-extrabold text-black">Services</h2>
         <div className='py-2 max-w-[90%] h-screen m-auto text-white'>
            <div className='flex flex-col h-full justify-center gap-6'>
                 <div className='flex justify-between flex-wrap gap-4 items-center'>
