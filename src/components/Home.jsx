@@ -1,6 +1,7 @@
 import About from './About'
 import Contact from './Contact'
 import Faqs from './Faqs'
+import Footer from './Footer'
 import Hero from './Hero/Hero'
 import Navbar from './Navbar/Navbar'
 import Pricing from './Pricing'
@@ -20,6 +21,7 @@ export default function Home() {
         <Contact/>
         <Testimonials/>
         <Faqs/>
+        <Footer/>
     </div>
   )
 }

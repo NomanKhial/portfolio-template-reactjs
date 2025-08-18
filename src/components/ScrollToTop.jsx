@@ -29,9 +29,9 @@ function ScrollToTop() {
       {scrollHeight > 200 && ( // show button only after scrolling down
         <div
           onClick={scrollTop}
-          className="fixed right-10 bottom-10 cursor-pointer z-50 grid place-content-center w-20 h-20 rounded-full bg-secondary hover:translate-y-1 duration-150"
+          className="fixed right-10 bottom-10 cursor-pointer z-50 grid place-content-center w-10 h-10 rounded-full bg-secondary hover:translate-y-1 duration-150"
         >
-          <BsArrowUp size={30} color="black" />
+          <BsArrowUp size={20} color="black" />
         </div>
       )}
     </>

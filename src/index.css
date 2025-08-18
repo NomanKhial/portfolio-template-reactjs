@@ -32,3 +32,6 @@
   resize: none;
   min-height: 200px;
 }
+a:hover{
+  color: #5840ba;
+}
