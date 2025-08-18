@@ -4,11 +4,11 @@ import articleimage from "../assets/woman-8852668_1920.jpg"
 import { RxDotFilled } from "react-icons/rx";
 function Blogs() {
   return (
-    <section id="blogs" className="flex flex-col gap-20">
-      <section className="flex items-center justify-between">
+    <section id="blogs" className="flex flex-col gap-10">
+      <section className="flex flex-wrap gap-2 items-center justify-between">
         <div className="flex flex-col gap-2 font-bold">
-          <span className=" text-xl text-slate-600">- Blogs</span>
-          <h2 className=" text-5xl">
+          <span className="text-xl text-slate-600">- Blogs</span>
+          <h2 className=" text-4xl md:text-6xl">
             From My <br /> <span className=" text-primary">Blog Post</span>{" "}
           </h2>
         </div>
