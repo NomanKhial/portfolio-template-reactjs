@@ -34,7 +34,7 @@ function Footer() {
         </section>
 
         {/* main footer */}
-        <section className=" flex  justify-between  border-b border-black/10 py-10 text-slate-600">
+        <section className=" flex  flex-wrap justify-between  border-b border-black/10 py-10 text-slate-600">
           <article className="flex flex-col gap-10 basis-1/3">
             <header className="flex gap-2 items-center w-60">
               <img
