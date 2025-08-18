@@ -4,11 +4,12 @@ import Card from './Card'
 
 export default function Services() {
   return (
-    <div id='services' className='h-screen pt-20 relative'>
-        <h2 className=" absolute top-0 left-0 z-10 text-[250px] tracking-wide font-extrabold text-gray-600/50">Services</h2>
-        <div className='absolute z-20 bg-primary/90 inset-0 h-full'>
-           <div className=' mt-32 h-full max-w-[70%] m-auto text-white'>
-                <div className='flex justify-between items-center'>
+   <section id='services'  className='min-h-screen pt-20 bg-primary/90 py-2 '>
+     <div className='relative'>
+        <h2 className="absolute top-0 left-0 -z-10 text-7xl md:text-[250px] tracking-wide font-extrabold text-black">Services</h2>
+        <div className='py-2 max-w-[70%] h-screen m-auto text-white'>
+           <div className='flex flex-col h-full justify-center gap-6'>
+                <div className='flex justify-between flex-wrap gap-4 items-center'>
                     {/* left side */}
                     <div className='flex flex-col gap-1'>
                         <p className='text-3xl'> - Services</p>
@@ -23,9 +24,10 @@ export default function Services() {
 
                 </div>
                     {/* bottom section */}
-                    <Card/>
+                <Card/>
            </div>
         </div>
     </div>
+   </section>
   )
 }

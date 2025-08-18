@@ -33,10 +33,10 @@ const servicesProvided = [
 
 export default function Card() {
   return (
-    <div className='mt-40 grid grid-cols-3 gap-2 text-black'>
+    <div className='grid md:grid-cols-3 gap-2 text-black'>
             {
                 servicesProvided.map(({skill, description, linkText, Icon}, index)=>(
-                    <div className='bg-white min-w-[300px] h-auto p-4 rounded-lg' key={index}>
+                    <div className='bg-white max-w-[600px] h-auto p-4 rounded-lg' key={index}>
                     <h1 className='text-xl bg-secondary inline-block text-slate-600 p-1
                      px-4 rounded-full'>{skill}</h1>
                     <div className='flex items-center mt-3 gap-2 '>
