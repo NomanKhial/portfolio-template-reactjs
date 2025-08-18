@@ -1,13 +1,13 @@
 import React from "react";
 import pic from "../assets/woman-8852668_1920.jpg";
-import { FaQuoteLeft,  FaStar } from "react-icons/fa6";
+import { FaQuoteLeft, FaStar } from "react-icons/fa6";
 import { HiArrowLeftCircle, HiArrowRightCircle } from "react-icons/hi2";
 import Blogs from "./Blogs";
 function Testimonials() {
   return (
-    <section id="testamonals" className=" min-h-screen bg-slate-300/50">
-      <section className="max-w-[70%] m-auto py-20 flex flex-col gap-40 relative">
-        <h2 className=" text-8xl  -left-10 font-bold text-black/5 absolute -z-10">
+    <section id="testamonals" className="min-h-screen bg-slate-300/50">
+      <section className="md:max-w-[70%] max-w-[90%] m-auto py-20 flex flex-col gap-40 relative">
+        <h2 className=" text-6xl  -left-10 font-bold text-black/5 absolute -z-10">
           Testimonials
         </h2>
         <article className="flex flex-col gap-8">
@@ -15,7 +15,7 @@ function Testimonials() {
             <span className=" text-slate-600 text-xl font-bold">
               - Client Testimonials
             </span>
-            <h2 className=" leading-12 text-slate-600 text-6xl font-bold">
+            <h2 className="leading-12 text-slate-600 text-4xl md:text-6xl font-bold">
               Testimonials that{" "}
               <span className=" text-primary">
                 speaks to <br /> My results
@@ -23,11 +23,19 @@ function Testimonials() {
             </h2>
           </header>
 
-          <section className="p-10 bg-black/5 w-full rounded-lg h-[400px] flex items-center justify-center gap-10 relative">
-         <HiArrowLeftCircle size={60} color="black" className=" absolute -left-6"/>
-         <HiArrowRightCircle size={60} color="#5840ba" className=" absolute -right-6"/>
-   
-            <div className="relative w-[300px] h-[300px]  ">
+          <section className="p-5 md:p-10 bg-black/5 w-full rounded-lg min-h-[400px] flex items-center flex-wrap justify-center gap-10 relative">
+            <HiArrowLeftCircle
+              size={30}
+              color="black"
+              className=" absolute hidden md:-left-6"
+            />
+            <HiArrowRightCircle
+              size={40}
+              color="#5840ba"
+              className=" absolute md:-right-6 bottom-6 right-4 cursor-pointer hover:text-primary transition-all duration-300"
+            />
+
+            <div className="relative md:w-[300px] md:h-[300px]  ">
               <img
                 src={pic}
                 alt="testimonals pic"
@@ -50,8 +58,8 @@ function Testimonials() {
                 went through the same pain. The same sad story. When u always
                 blame yourself for his faults. When have to beg for his
                 attention. When u want to move on but can't coz he keeps coming
-                back. When u hate yourself for being so weak and
-                addicted. When u really want to move on but don't know how.
+                back. When u hate yourself for being so weak and addicted. When
+                u really want to move on but don't know how.
               </p>
 
               <div className="flex flex-col gap-2">
@@ -61,7 +69,7 @@ function Testimonials() {
             </article>
           </section>
         </article>
-          <Blogs/>
+        <Blogs />
       </section>
     </section>
   );
