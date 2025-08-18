@@ -1,19 +1,33 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import menuLink from "./data.js"
-import { NavLink } from 'react-router'
+import { NavLink, useLocation } from 'react-router'
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('home')
+ 
+  const location = useLocation();
+
+  function handleScroll() {
+     if (location.hash) {
+      const section = document.querySelector(location.hash)
+     
+      if (section) {
+         section.scrollIntoView({behavior: 'smooth'})
+      }
+    }
+  }
+
+  useEffect(handleScroll, [location.hash])
 
   return (
     <header className='max-w-[90%] mx-auto py-6 bg-white shadow-md rounded-lg'>
         <nav className='flex justify-between items-center'>
-         <h1 className="text-3xl font-bold">NomanKial</h1>
+         <NavLink to='/' className="text-3xl font-bold">NomanKial</NavLink>
             <ul className='hidden md:flex gap-10'>
                {
-                menuLink.map((menu, id)=> <NavLink className={`${menu === activeLink ? 'border-b text-primary' : ''}`} onClick={()=> setActiveLink(menu)} key={id}>{menu}</NavLink>)
+                menuLink.map((menu, id)=> <NavLink to={`#${menu.toLowerCase()}`} className={`${menu === activeLink ? 'border-b text-primary' : ''}`} onClick={()=> setActiveLink(menu)} key={id}>{menu}</NavLink>)
                }
             </ul>
-            <button className='bg-primary px-8 py-3 rounded-full text-white  font-bold '>Contact Me</button>
+            <NavLink to='#contact'  className='bg-primary px-8 py-3 rounded-full text-white  font-bold '>Contact Me</NavLink>
         </nav>
     </header>
   )

@@ -6,7 +6,7 @@ import { SiGooglescholar } from "react-icons/si";
 
 function About() {
   return (
-    <section className="max-w-[80%] py-10 m-auto flex flex-col gap-4 ">
+    <section id="about" className="max-w-[80%] py-10 m-auto flex flex-col gap-4 ">
       {/* top section start */}
       <section className="flex gap-24 items-start py-32 justify-center">
         {/* left side */}

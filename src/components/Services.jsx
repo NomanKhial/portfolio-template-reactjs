@@ -4,7 +4,7 @@ import Card from './Card'
 
 export default function Services() {
   return (
-    <div className='h-screen pt-20 relative'>
+    <div id='services' className='h-screen pt-20 relative'>
         <h2 className=" absolute top-0 left-0 z-10 text-[250px] tracking-wide font-extrabold text-gray-600/50">Services</h2>
         <div className='absolute z-20 bg-primary/90 inset-0 h-full'>
            <div className=' mt-32 h-full max-w-[70%] m-auto text-white'>

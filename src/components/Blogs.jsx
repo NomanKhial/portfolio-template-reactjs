@@ -4,7 +4,7 @@ import articleimage from "../assets/woman-8852668_1920.jpg"
 import { RxDotFilled } from "react-icons/rx";
 function Blogs() {
   return (
-    <section className="flex flex-col gap-20">
+    <section id="blogs" className="flex flex-col gap-20">
       <section className="flex items-center justify-between">
         <div className="flex flex-col gap-2 font-bold">
           <span className=" text-xl text-slate-600">- Blogs</span>

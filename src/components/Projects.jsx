@@ -4,7 +4,7 @@ import projectImage from "../../src/assets/woman-8852668_1920.jpg";
 
 function Projects() {
   return (
-    <section className="w-full bg-primary min-h-screen m-auto  -z-10 relative">
+    <section id="projects" className="w-full bg-primary min-h-screen m-auto  -z-10 relative">
       {/* big background title */}
       <h2 className="text-[160px]  font-bold tracking-tight text-white/10 m-32 absolute">
         Latest Projects

@@ -6,7 +6,7 @@ import { MdMarkEmailUnread } from "react-icons/md";
 
 function Contact() {
   return (
-    <section className="connect bg-primary/90 py-10 h-screen flex justify-center items-center">
+    <section id="contact" className="connect bg-primary/90 py-10 h-screen flex justify-center items-center">
       <section className="max-w-[80%] mx-auto relative">
         <h2 className="absolute text-black/50 -z-10 text-9xl font-bold tracking-tight">
           Contact Us
