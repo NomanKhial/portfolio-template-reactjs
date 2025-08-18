@@ -6,16 +6,16 @@ import { MdMarkEmailUnread } from "react-icons/md";
 
 function Contact() {
   return (
-    <section id="contact" className="connect bg-primary/90 py-10 h-screen flex justify-center items-center">
-      <section className="max-w-[80%] mx-auto relative">
-        <h2 className="absolute text-black/50 -z-10 text-9xl font-bold tracking-tight">
+    <section id="contact" className="connect bg-primary/90 py-20  min-h-screen flex md:justify-center items-center">
+      <section className="max-w-[90%] mx-auto relative">
+        <h2 className="absolute text-black/50 -z-10 text-6xl top-15 md:text-9xl font-bold tracking-tight">
           Contact Us
         </h2>
-        <section className=" text-white flex max-w-[90%] gap-4 mx-auto mt-20 justify-between flex-wrap">
-          <div className="flex flex-col gap-6 basis-1/2">
+        <section className=" text-white flex max-w-[90%] gap-4 mx-auto  justify-between flex-wrap">
+          <div className="flex flex-col gap-6 basis-1/3">
             <div className="flex flex-col gap-2">
               <span className="font-bold text-xl">- Contact Us</span>
-              <h2 className=" text-6xl font-bold text-white">
+              <h2 className=" text-4xl md:text-6xl font-bold text-white">
                 Let's <span className=" text-secondary">Conntect</span> &{" "}
                 <span className=" text-secondary">Collaborate</span>
               </h2>
@@ -61,8 +61,8 @@ function Contact() {
               </ul>
             </address>
           </div>
-          <form className=" basis-1/3 flex flex-col gap-6">
-            <div className="flex gap-8">
+          <form className=" basis-1/2 flex flex-col gap-6">
+            <div className="flex flex-wrap gap-8">
               <input
                 type="text"
                 inputMode="text"
@@ -76,7 +76,7 @@ function Contact() {
                 required
               />
             </div>
-            <div className="flex gap-8">
+            <div className="flex  flex-wrap gap-8">
               <input
                 type="text"
                 inputMode="email"
