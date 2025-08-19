@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import menuLink from "./data.js"
 import { Link, NavLink, useLocation } from 'react-router'
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('home')
  
@@ -35,6 +35,9 @@ export default function Navbar() {
               </li>
               <li>
                 <Link to='https://github.com/NomanKhial'> <FaGithub size={30} color="black"/> </Link>
+              </li>
+              <li>
+                <Link to='https://pk.linkedin.com/in/noman-khial-2b804035a'> <FaLinkedin size={30} color="#0077B5"/> </Link>
               </li>
 
                 

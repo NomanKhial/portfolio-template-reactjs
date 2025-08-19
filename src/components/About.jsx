@@ -12,13 +12,13 @@ function About() {
         {/* left side */}
         <div className="relative">
           <div className="bg-primary text-white relative w-[280px] h-[280px] md:w-[380px] md:h-[360px] rounded-lg">
-            <h2 className=" absolute -rotate-90 -left-[118px] md:-left-[170px] tracking-[7px] top-1/2 text-[32px] md:text-[60px] font-bold -translate-y-1/2">
+            <h2 className=" absolute -rotate-90 -left-[118px] md:-left-[150px] max-md:tracking-[7px] top-1/2 text-[32px] md:text-[60px] font-bold -translate-y-1/2">
               Noman Khial
             </h2>
-            <h2 className="absolute md:tracking-[-50px] right-6 md:right-0 top-1/2 leading-none -translate-y-1/2 text-[200px] md:text-[350px] font-bold">
+            <h2 className="absolute md:tracking-[-20px] right-6 md:right-0 top-1/2 leading-none -translate-y-1/2 text-[200px] md:text-[350px] font-bold">
               12
             </h2>
-            <p className=" text-xl absolute bottom-4  right-6 md:right-10 ">
+            <p className=" text-xl absolute bottom-4  right-6 md:right-16  ">
               Year Of Experinces
             </p>
           </div>
