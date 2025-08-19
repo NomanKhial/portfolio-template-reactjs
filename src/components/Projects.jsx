@@ -39,7 +39,7 @@ function Projects() {
         </div>
 
         {/* project cards */}
-        <section className="md:w-[86%] mx-auto p-3 rounded-3xl mt-20 bg-primary border min-h-[460px]">
+        <section className="md:w-[86%] mx-auto p-6 rounded-3xl mt-20 bg-white/10  min-h-[460px]">
           <div className="flex gap-10 items-center flex-wrap h-full">
             <div className="md:basis-1/3 md:min-w-[320px] overflow-hidden">
               <img
@@ -89,7 +89,7 @@ function Projects() {
         </section>
 
         {/* duplicate card for demo */}
-   <section className="md:w-[86%] mx-auto p-3 rounded-3xl mt-20 bg-primary border min-h-[460px]">
+   <section className="md:w-[86%] mx-auto p-6 rounded-3xl mt-20 bg-white/10  min-h-[460px]">
           <div className="flex gap-10 items-center flex-wrap h-full">
             <div className="md:basis-1/3 md:min-w-[320px] overflow-hidden">
               <img
@@ -99,7 +99,7 @@ function Projects() {
               />
             </div>
 
-            <div className="basis-1/2 text-white">
+            <div className="text-white flex-1 -order-1">
               <div className="flex gap-4 flex-wrap">
                 <span className=" inline-block bg-secondary text-slate-700 font-bold px-4 py-[4px] rounded-full">
                   Web Development

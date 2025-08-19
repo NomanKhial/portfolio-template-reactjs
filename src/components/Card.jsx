@@ -36,11 +36,11 @@ export default function Card() {
     <div className='grid md:grid-cols-3 gap-2 text-black'>
             {
                 servicesProvided.map(({skill, description, linkText, Icon}, index)=>(
-                    <div className='bg-white max-w-[600px] h-auto p-4 rounded-lg' key={index}>
-                    <h1 className='text-xl bg-secondary inline-block text-slate-600 p-1
+                    <div className='bg-white max-w-[600px] h-[400px] flex flex-col justify-between p-4 rounded-lg' key={index}>
+                    <h1 className='text-xl bg-secondary inline-block text-right self-end text-slate-600 p-1
                      px-4 rounded-full'>{skill}</h1>
-                    <div className='flex items-center mt-3 gap-2 '>
-                        <Icon size={90}/>
+                    <div className='flex flex-col items-center mt-3 gap-2 '>
+                        <Icon size={190}/>
                         <p>{description}</p>
                     </div>
                         <p className='flex justify-end gap-2 cursor-pointer items-center'>{linkText} <IoArrowForwardCircle size={40}/> </p>
