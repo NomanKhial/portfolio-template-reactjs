@@ -1,6 +1,5 @@
 import React from 'react'
 import { DiJavascript } from 'react-icons/di'
-import { FaReact } from 'react-icons/fa'
 import { GrReactjs } from 'react-icons/gr'
 import { IoArrowForwardCircle, IoLogoJavascript } from 'react-icons/io5'
 import { TbBrandReactNative } from 'react-icons/tb'

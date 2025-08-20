@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import pic from "../assets/woman-8852668_1920.jpg";
-import { FaQuoteLeft, FaStar } from "react-icons/fa6";
+import { FaQuoteLeft, FaStar } from "react-icons/fa"; // ✅ correct package
 import { HiArrowLeftCircle, HiArrowRightCircle } from "react-icons/hi2";
 import Blogs from "./Blogs";
 
@@ -37,21 +37,21 @@ function Testimonials() {
   };
 
   return (
-    <section id="testamonals" className="min-h-screen bg-slate-300/50">
+    <section id="testimonials" className="min-h-screen bg-slate-300/50">
       <section className="md:max-w-[70%] max-w-[90%] m-auto py-20 flex flex-col gap-40 relative">
-        <h2 className=" text-6xl -left-10 font-bold text-black/5 absolute -z-10">
+        <h2 className="text-6xl -left-10 font-bold text-black/5 absolute -z-10">
           Testimonials
         </h2>
 
         <article className="flex flex-col gap-8">
           {/* Heading */}
           <header className="text-center">
-            <span className=" text-slate-600 text-xl font-bold">
+            <span className="text-slate-600 text-xl font-bold">
               - Client Testimonials
             </span>
             <h2 className="leading-12 text-slate-600 text-4xl md:text-6xl font-bold">
               Testimonials that{" "}
-              <span className=" text-primary">
+              <span className="text-primary">
                 speaks to <br /> My results
               </span>
             </h2>
@@ -82,7 +82,7 @@ function Testimonials() {
               {testimonials.map((t) => (
                 <section
                   key={t.id}
-                  className="w-full flex-shrink-0 flex items-center flex-wrap justify-center gap-10 bg-black/5 rounded-lg p-6 min-h-[400px]"
+  className="w-full flex-shrink-0 flex flex-col md:flex-row md:items-center gap-10 bg-black/5 rounded-lg p-6 min-h-[400px]"
                 >
                   {/* Image */}
                   <div className="relative w-[200px] h-[200px] md:w-[300px] md:h-[300px]">
@@ -96,22 +96,23 @@ function Testimonials() {
                     </div>
                   </div>
 
-                  {/* Text */}
-                  <article className="flex-1 flex flex-col gap-6">
-                    <div className=" font-bold text-xl flex gap-1 items-center">
-                      {Array.from({ length: t.rating }).map((_, i) => (
-                        <FaStar key={i} size={30} color="#ffc30b" />
-                      ))}
-                      {t.rating}.0
-                    </div>
-                    <p className="text-[16px] text-slate-600 max-w-[800px]">
-                      {t.feedback}
-                    </p>
-                    <div className="flex flex-col gap-2">
-                      <span className="font-bold">{t.name}</span>
-                      <span>{t.role}</span>
-                    </div>
-                  </article>
+                 {/* Text */}
+<article className="flex-1 flex flex-col gap-6 text-left">
+  <div className="font-bold text-xl flex gap-1 items-center">
+    {Array.from({ length: t.rating }).map((_, i) => (
+      <FaStar key={i} size={30} color="#ffc30b" />
+    ))}
+    {t.rating}.0
+  </div>
+  <p className="text-[16px] max-w-[280px] line-clamp-3 text-slate-600 md:max-w-[800px]">
+    {t.feedback}
+  </p>
+  <div className="flex flex-col gap-2">
+    <span className="font-bold">{t.name}</span>
+    <span>{t.role}</span>
+  </div>
+</article>
+
                 </section>
               ))}
             </div>

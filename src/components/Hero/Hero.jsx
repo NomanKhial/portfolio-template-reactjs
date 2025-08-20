@@ -10,7 +10,7 @@ export default function Hero() {
           <span>- Hello</span>
           <h2
             className="text-3xl md:text-6xl lg:text-8xl font-bold 
-               text-transparent bg-clip-text bg-woman bg-cover bg-center inline-block"
+               text-transparent bg-clip-text bg-woman  bg-cover bg-center inline-block"
           >
             I'm{" "}
             <span className="underline underline-primary inline-block">
