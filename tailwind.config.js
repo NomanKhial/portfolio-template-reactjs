@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+      'woman': "url('/src/assets/woman-8852668_1920.jpg')",
+    },
       colors: {
         primary: '#5840ba',
         secondary: '#a4db74',

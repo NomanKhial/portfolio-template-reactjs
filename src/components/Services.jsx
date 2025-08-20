@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 import Card from './Card'
+import Button from './Button'
 
 export default function Services() {
   return (
@@ -17,10 +18,7 @@ export default function Services() {
                     </div>
 
                     {/* right side */}
-                    <div className='flex gap-3 items-center justify-between overflow-hidden text-black bg-white rounded-full w-60 h-14'>
-                        <BsArrowRight size={40} color='white' className=' ml-2 bg-primary rounded-full w-10 p-2 h-10'/>
-                        <button className='flex-1 bg-secondary h-full text-gray-800 font-bold  rounded-full'>View All Services</button>
-                    </div>
+                    <Button label="View All Services" themeButton={true}  ThemeBtnIcon={BsArrowRight} />
 
                 </div>
                     {/* bottom section */}

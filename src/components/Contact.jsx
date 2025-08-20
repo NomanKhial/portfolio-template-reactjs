@@ -3,6 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { FaPhoneAlt, FaSkype } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
+import Button from "./Button";
 
 function Contact() {
   return (
@@ -98,16 +99,8 @@ function Contact() {
               className="w-full"
             />
             <textarea placeholder="Message*" required  className=" w-full"></textarea>
-            <div className="flex gap-3 items-center justify-between overflow-hidden bg-white rounded-full w-60 h-14">
-              <BsArrowRight
-                size={40}
-                color="white"
-                className="ml-2 bg-primary rounded-full w-10 p-2 h-10"
-              />
-              <button className="flex-1 bg-secondary h-full text-gray-800 font-bold rounded-full">
-                Send Message
-              </button>
-            </div>
+
+            <Button label='Send Message'  themeButton={true}/>
           </form>
         </section>
       </section>

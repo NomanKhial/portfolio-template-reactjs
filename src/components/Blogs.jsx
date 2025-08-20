@@ -2,6 +2,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import articleimage from "../assets/woman-8852668_1920.jpg"
 import { RxDotFilled } from "react-icons/rx";
+import Button from "./Button";
 function Blogs() {
   return (
     <section id="blogs" className="flex flex-col gap-10">
@@ -12,16 +13,7 @@ function Blogs() {
             From My <br /> <span className=" text-primary">Blog Post</span>{" "}
           </h2>
         </div>
-        <div className="flex gap-3 items-center justify-between overflow-hidden  bg-black rounded-full w-60 h-14">
-          <BsArrowRight
-            size={40}
-            color="black"
-            className=" ml-2 bg-white rounded-full w-10 p-2 h-10"
-          />
-          <button className="flex-1 bg-secondary h-full text-gray-800 font-bold  rounded-full">
-            View All Blogs
-          </button>
-        </div>
+        <Button label='View All Blogs' themeButton={true}/>
       </section>
 
       {/* blogs */}
@@ -59,7 +51,7 @@ function Blogs() {
 
             <article className="flex flex-col gap-2">
                 <span className=" bg-secondary px-3 py-1 font-bold text-slate-600 rounded-full self-start">RaectJs</span>
-                <p className=" font-bold text-xl leading-6">ReactJs Developer Noman Khiial share his secret tips. see whats unvailing</p>
+                <p className=" font-bold text-xl leading-6 line-clamp-2">ReactJs Developer Noman Khiial share his secret tips. eactJs Developer Noman Khiial share his secret tips.  eactJs Developer Noman Khiial share his secret tips. eactJs Developer Noman Khiial share his secret tips. see whats unvailing</p>
                 <div className="flex justify-between items-center">
                     <span  className="flex items-center text-slate-600 ">
                     {/* <RxDotFilled size={30} color="#5840ba"/> */}

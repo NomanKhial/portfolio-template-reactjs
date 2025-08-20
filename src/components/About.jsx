@@ -4,6 +4,7 @@ import { FaSignature } from "react-icons/fa";
 import { ImBriefcase } from "react-icons/im";
 import { SiGooglescholar } from "react-icons/si";
 import cv from "../assets/Noman Resume-CFdM5diF (1).pdf"
+import Button from "./Button";
 function About() {
   return (
     <section id="about" className="max-w-[90%] py-20 m-auto flex flex-col  gap-4 ">
@@ -58,14 +59,7 @@ function About() {
             </div>
             <div className="flex justify-between mt-2">
               <a href={cv}  download className="flex gap-3 items-center justify-between overflow-hidden text-white bg-black rounded-full w-60 h-14">
-                <BsArrowRight
-                  size={40}
-                  color="black"
-                  className=" ml-2 bg-white rounded-full w-10 p-2 h-10"
-                />
-                <button  className="flex-1 bg-secondary h-full text-gray-800 font-bold  rounded-full">
-                  Download Cv
-                </button>
+                <Button label='Download CV' ThemeBtnIcon={BsArrowRight} themeButton={true}  />
               </a>
 
               <FaSignature size={60} color="#5840ba" />

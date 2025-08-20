@@ -1,6 +1,7 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import projectImage from "../../src/assets/woman-8852668_1920.jpg";
+import Button from "./Button";
 
 function Projects() {
   return (
@@ -73,16 +74,7 @@ function Projects() {
                   Tailwind, and Material UI.
                 </p>
 
-                <div className="flex gap-3 items-center justify-between overflow-hidden  bg-white rounded-full w-60 h-14">
-                  <BsArrowRight
-                    size={40}
-                    color="white"
-                    className=" ml-2 bg-primary rounded-full w-10 p-2 h-10"
-                  />
-                  <button className="flex-1 bg-secondary h-full text-gray-800 font-bold rounded-full">
-                    View Details
-                  </button>
-                </div>
+                <Button label="View Details" themeButton={true} ThemeBtnIcon={BsArrowRight} />
               </div>
             </div>
           </div>
@@ -122,17 +114,7 @@ function Projects() {
                   online with ease. Doctor-Appointment: built using React,
                   Tailwind, and Material UI.
                 </p>
-
-                <div className="flex gap-3 items-center justify-between overflow-hidden  bg-white rounded-full w-60 h-14">
-                  <BsArrowRight
-                    size={40}
-                    color="white"
-                    className=" ml-2 bg-primary rounded-full w-10 p-2 h-10"
-                  />
-                  <button className="flex-1 bg-secondary h-full text-gray-800 font-bold rounded-full">
-                    View Details
-                  </button>
-                </div>
+                <Button label="View Details" themeButton={true} ThemeBtnIcon={BsArrowRight} />
               </div>
             </div>
           </div>

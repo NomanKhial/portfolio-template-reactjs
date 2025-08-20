@@ -5,6 +5,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaBehance, FaInstagram, FaPlane, FaTwitter, FaYoutube } from "react-icons/fa";
 import NavbarItems from "../components/Navbar/data.js";
 import { Link } from "react-router";
+import Button from "./Button.jsx";
 function Footer() {
   const socialIcons = [
     FaFacebook,
@@ -21,16 +22,7 @@ function Footer() {
           <h2 className=" text-4xl  font-bold">
             Let's <span className=" text-primary">Connect</span> there
           </h2>
-          <div className="flex gap-3 items-center justify-between overflow-hidden bg-black rounded-full w-60 h-14">
-            <BsArrowRight
-              size={40}
-              color="black"
-              className="ml-2 bg-white rounded-full w-10 p-2 h-10"
-            />
-            <button className="flex-1 bg-secondary h-full text-gray-800 font-bold rounded-full">
-              Hire Me Now
-            </button>
-          </div>
+          <Button label='Hire Me Now' themeButton={true}/>
         </section>
 
         {/* main footer */}
