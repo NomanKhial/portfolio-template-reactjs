@@ -1,6 +1,15 @@
 {
   "name": "portfolio",
-  "private": true,
+  "author": 'Noman Khial',
+  "description": "A portfolio built with React.js showcasing projects and skills.",
+  "keywords": [
+    "React",
+    "Portfolio",
+    "Web Development",
+    "Projects",
+    "Skills"
+  ],
+  "license": "MIT",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
