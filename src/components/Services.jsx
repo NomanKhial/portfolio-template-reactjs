@@ -23,13 +23,13 @@ export default function SkillCarousel() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden  text-white border-b bg-primary">
+    <div id="services" className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden  text-white border-b bg-primary">
       
       {/* Animated Heading */}
       <h2
         className="text-5xl md:text-6xl font-extrabold  mb-16"
       >
-        My Skill Set
+       Services
       </h2>
 
       {/* Carousel */}
